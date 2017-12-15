@@ -5,8 +5,8 @@
 #include <ESP8266mDNS.h>
 
 // WiFi parameters
-const char* ssid = "Orange";
-const char* password = "navnik18";
+const char* ssid = "xxxxxxxx";
+const char* password = "xxxxxxxx";
 
 ESP8266WebServer server(80);
 
@@ -15,7 +15,7 @@ const char* getWeatherCondition(){
   const char* condition;
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;  //Declare an object of class HTTPClient
-    http.begin("http://api.openweathermap.org/data/2.5/weather?lat=1.3366329&lon=103.7350981&appid=d03e75882bdd6d2e61acf2d6df4daf22");
+    http.begin("http://api.openweathermap.org/data/2.5/weather?lat=xxxxxxx&lon=xxxxxxxxxxxx&appid=xxxxxxxxxxx");
     int httpCode = http.GET();
  
     if (httpCode > 0) {
